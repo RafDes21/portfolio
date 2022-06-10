@@ -1,0 +1,25 @@
+.header{
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-bottom: 80px;
+}
+.cambio{
+    background-color: transparent !important;
+    margin-bottom: 80px;
+    z-index: 20;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    .navbar-brand{
+        color: beige;
+        text-shadow: 2px 2px 2px rgb(13, 13, 17);
+    }
+    .nav-link{
+        color: aliceblue !important;
+        text-shadow: 2px 2px 2px rgb(13, 13, 17);
+    }
+}
+
+    

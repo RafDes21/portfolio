@@ -50,7 +50,7 @@ const Tools = () => {
 
 ]
 return (
-  <Container className='tools'>
+  <Container className='tools' id="herramientas">
     <Row style={{position:"relative"}}>
       <ToolLog logos={logos}/>
     </Row>

@@ -7,7 +7,7 @@ import {Col} from 'react-bootstrap';
 const ProyectComp = () => {
   return (
     
-   <Col >
+   <Col id="proyects">
       <Card className='proyect' style={{ width: '18rem' }}>
           <Card.Img variant="top" src="holder.js/100px180" />
           <Card.Body>

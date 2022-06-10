@@ -5,8 +5,8 @@ import Button from 'react-bootstrap/Button';
 
 const AboutComp = () => {
   return (
-    <>
-      <Card className='Card'>
+    <div  className='Card'>
+      <Card id="acercaDeMi">
          <Card.Body>
          <Card.Title>Israel Tineo</Card.Title>
          <Card.Text>
@@ -18,7 +18,7 @@ const AboutComp = () => {
         <Button variant="primary"> Descargar CV</Button>
         </Card.Body>
       </Card>
-    </>
+    </div>
   )
 }
 export default AboutComp
