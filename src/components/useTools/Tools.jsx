@@ -1,4 +1,5 @@
 import React from 'react'
+import { Container, Row } from 'react-bootstrap'
 import ToolLog from './ToolLog'
 import "./tools.scss"
 
@@ -7,51 +8,59 @@ const Tools = () => {
   const logos =[
     {
         id:1,
-        imagen:"https://us.123rf.com/450wm/innayatsuk/innayatsuk2102/innayatsuk210200051/165304530-orange-3d-html5-icon-isolated-on-white-background-.jpg?ver=6"
+        imagen:"https://cdn-icons-png.flaticon.com/512/174/174854.png",
+        nombre:"logo html"
     },
     {
         id:2,
-        imagen:"https://res.cloudinary.com/marcomadera/image/upload/v1602894559/Blog/7/css_k23ypb.png"
+        imagen:"https://cdn-icons-png.flaticon.com/512/732/732190.png",
+        nombre:"logo css"
     },
     {
       id:3,
-      imagen:"https://conectasoftware.com/wp-content/uploads/2020/03/JS.jpg"
+      imagen:"https://www.jovenesprogramadores.cl/wp-content/uploads/2020/07/JavaScript.png",
+      nombre:"logo Javascript"
   },
   {
     id:4,
-    imagen:"https://iconape.com/wp-content/png_logo_vector/git-icon.png"
+    imagen:"https://iconape.com/wp-content/png_logo_vector/git-icon.png",
+    nombre:"logo github "
 },
 {
   id:5,
-  imagen:"https://sass-lang.com/assets/img/styleguide/color-1c4aab2b.png"
+  imagen:"https://sass-lang.com/assets/img/styleguide/color-1c4aab2b.png",
+  nombre:"logo Sass"
 },
 {
   id:6,
-  imagen:"https://crowdcast-prod.imgix.net/-KHhIzuATU2K4OVPd2sP/event-cover-5388?w=800"
+  imagen:"https://crowdcast-prod.imgix.net/-KHhIzuATU2K4OVPd2sP/event-cover-5388?w=800",
+  nombre:"logo Bootstrap-React"
 },
 {
   id:7,
-  imagen:"https://i.pinimg.com/originals/be/d3/0d/bed30ddfa5d434e827c775ac9a3b0d38.jpg"
+  imagen:"https://cdn-icons-png.flaticon.com/512/5968/5968672.png",
+  nombre:"logo Bootstrap"
 },
 {
   id:8,
-  imagen:"https://brandlogos.net/wp-content/uploads/2020/09/react-logo-512x512.png"
+  imagen:"https://brandlogos.net/wp-content/uploads/2020/09/react-logo-512x512.png",
+  nombre:"logo React"
 },
 
 
 ]
 return (
-  <div className='tools'>
-    {
-      logos.map((logo,index)=>(
-        <ToolLog key={index} imagen={logo.imagen}/>
-      ))
-    }
+  <Container className='tools'>
+    <Row style={{position:"relative"}}>
+      <ToolLog logos={logos}/>
+    </Row>
+  </Container>
+)}
     
-  </div>
+
+
+
   
-)
-}
 
 
 
