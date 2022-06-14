@@ -51,6 +51,7 @@ const Tools = () => {
 ]
 return (
   <Container className='tools' id="herramientas">
+    <h2>HERRAMIENTAS</h2>
     <Row style={{position:"relative"}}>
       <ToolLog logos={logos}/>
     </Row>

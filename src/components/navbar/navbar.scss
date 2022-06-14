@@ -4,6 +4,10 @@
     right: 0;
     left: 0;
     margin-bottom: 80px;
+    background:linear-gradient(#536976, #292e49);
+}
+.logo-header{
+    width: 50px;
 }
 .cambio{
     background-color: transparent !important;
@@ -25,5 +29,17 @@
         background-color: rgba(95, 173, 173, 0.555);
     }
 }
+.ms-auto .item{
+    color: aqua !important;
+    text-shadow: 1px 1px rgb(19, 17, 17);
+    text-transform: uppercase;
+    transition: all 0.1s;
+}
+.ms-auto .item:hover{
+    background-color: #292e49;
+    border-radius:15px;
+    transform: scale(1.05);
+}
+   
 
     

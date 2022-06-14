@@ -1,21 +1,29 @@
 .footer{
     height: 100px;
     position: relative;
-   
+  
 }
 .footer .footer-redes{
     font-size: 40px;
     color: aqua;
     margin:0 20px;
+    display: flex;
+    justify-content: center;
 }
 .footer .footer__instagram{
     margin:0 20px;
+    cursor: pointer;
+    color: lightseagreen;
 }
-.footer .footer__facebook{
+.footer .footer__linkedin{
     margin:0 20px;
+    cursor: pointer;
+    color: lightseagreen;
 }
 .footer .footer__whatsapp{
     margin:0 20px;
+    cursor: pointer;
+    color: lightseagreen;
 }
 .footer .footer-copy{
     

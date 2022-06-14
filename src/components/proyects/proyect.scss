@@ -1,9 +1,21 @@
 .proyect{
-    margin: 20px auto;
+ margin: 5px auto;
+ box-shadow: 2px 2px 4px 5px rgb(58, 56, 56);
+ border: none;
+ background: rgba(27, 23, 23, 0.719);
+ transition: all 0.7s;
 }
+.proyect:hover{
+    transform: scale(1.03);
+}
+.proyect .titulo{
+    color:aliceblue;
+    padding-bottom: 10px;
+   text-transform: uppercase;
+}
+
 .proyect-botons{
     display: flex;
     justify-content: space-between;
 }
 
-    

@@ -29,7 +29,7 @@ export default App;
       
       
       
-{/* <ParticleComp/>
+/* <ParticleComp/>
 <NavbarComp/>
 <BrowserRouter>
   <Routes>
@@ -40,7 +40,7 @@ export default App;
   </Routes>
 </BrowserRouter>
 <Footer/>
-      */}
+      */
      
 
 

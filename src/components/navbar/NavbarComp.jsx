@@ -23,14 +23,14 @@ if (window.scrollY > 100){
   return (
     <Navbar bg="light" expand="lg"  className ={show?"cambio":"header"}>
       <Container>
-        <Navbar.Brand href="/">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand ><img className='logo-header' src="https://www.aluracursos.com/assets/api/formacoes/512/front-end.png" alt="" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
         <Navbar.Collapse id="basic-navbar-nav">
            <Nav className="ms-auto">
-           <Nav.Link href="#acercaDeMi">Acerca de mí</Nav.Link>
-           <Nav.Link href="#proyects">Proyectos</Nav.Link>
-           <Nav.Link href="#herramientas">Herramientas</Nav.Link>
-           <Nav.Link href="#contact">Contacto</Nav.Link>
+           <Nav.Link className='item' href="#acercaDeMi">Acerca de mí</Nav.Link>
+           <Nav.Link className='item' href="#proyects">Proyectos</Nav.Link>
+           <Nav.Link className='item' href="#herramientas">Herramientas</Nav.Link>
+           <Nav.Link className='item' href="#contact">Contacto</Nav.Link>
            </Nav>
          </Navbar.Collapse>
      </Container>
