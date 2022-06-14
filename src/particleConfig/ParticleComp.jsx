@@ -18,7 +18,7 @@ const ParticleComp = () => {
       };
   return (
     <div >
-         <Particles style={{zIndex:"-4"}}
+         <Particles style={{zIndex:"-20"}}
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}

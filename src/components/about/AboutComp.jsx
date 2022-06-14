@@ -3,10 +3,16 @@ import "./about.scss"
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import pdf from "../cv/CV-IS.pdf"
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+import { useEffect } from 'react';
 
 const AboutComp = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
-    <div >
+    <div data-aos="fade-down-right">
       <Card id="acercaDeMi" className='Card' >
          <Card.Body >
          <Card.Title>Israel Tineo</Card.Title>
@@ -21,14 +27,13 @@ const AboutComp = () => {
                Descargar CV
           </a> 
           </Button>
+          
         </Card.Body>
       </Card>
     </div>
   )
 }
 export default AboutComp
-          
- 
          
 
     
