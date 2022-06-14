@@ -7,12 +7,13 @@ import { ProyectsComp } from './components/proyects/ProyectsComp';
 import Tools from './components/useTools/Tools';
 import Footer from './components/footer/Footer';
 import { Contact } from './components/contact/Contact';
-import ParticleComp from './particleConfig/ParticleComp';
+import ParticlesBack from './ParticlesBack';
 
 function App() {
   return (
-    <div className="App">
-     <ParticleComp/>
+    <div className="App" style={{background:"linear-gradient(to left, #0f2027, #203a43, #2c5364)", height:"100%"}}>
+      
+     {/* <ParticlesBack/>  */}
      <NavbarComp/>
      <AboutComp />
      <ProyectsComp/>
