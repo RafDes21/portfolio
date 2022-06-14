@@ -14,17 +14,30 @@
     margin:0 20px;
     cursor: pointer;
     color: lightseagreen;
+    transition: all 0.3s;
+}
+.footer .footer__instagram:hover{
+    transform:scale(1.2)
 }
 .footer .footer__linkedin{
     margin:0 20px;
     cursor: pointer;
     color: lightseagreen;
+    transition: all 0.3s;
+}
+.footer .footer__linkedin:hover{
+    transform:scale(1.2)
 }
 .footer .footer__whatsapp{
     margin:0 20px;
     cursor: pointer;
     color: lightseagreen;
+    transition: all 0.3s;
 }
+.footer .footer__whatsapp:hover{
+    transform:scale(1.2)
+}
+
 .footer .footer-copy{
     
     color: white;

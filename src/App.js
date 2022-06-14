@@ -9,14 +9,12 @@ import Footer from './components/footer/Footer';
 import { Contact } from './components/contact/Contact';
 import ParticleComp from './particleConfig/ParticleComp';
 
-
 function App() {
   return (
-
     <div className="App">
      <ParticleComp/>
      <NavbarComp/>
-     <AboutComp/>
+     <AboutComp />
      <ProyectsComp/>
      <Tools />
      <Contact/>
@@ -25,6 +23,12 @@ function App() {
   );
 }
 export default App;
+
+
+
+  
+  
+
      
       
       

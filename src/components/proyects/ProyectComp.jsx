@@ -1,11 +1,17 @@
 import React from "react";
 import "./proyect.scss";
 import { Button, Card, Col } from "react-bootstrap";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+import { useEffect } from 'react';
 
 const ProyectComp = (props) => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <Col id="proyects" >
-           <Card  className="proyect" style={{ width: "18rem"}}>
+           <Card  className="proyect" style={{ width: "18rem"}} data-aos="fade-up-left">
            <Card.Img style={{height:"14rem"}} variant="top" src={props.img} />
            <Card.Body>
               <Card.Title className="titulo">{props.titulo}</Card.Title>
@@ -31,3 +37,4 @@ export default ProyectComp;
       
     
         
+

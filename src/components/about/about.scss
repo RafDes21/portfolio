@@ -2,4 +2,22 @@
    border: none;
    width: 80%;
    margin: 100px auto;
+   background: rgba(0, 0, 0, 0.767);
+   
+}
+.card-body{
+   box-shadow: 1px 1px 10px 5px #292e49;
+   border-radius: 5px;
+}
+.Card .card-title{
+   color: aqua;
+   font-size: 40px;
+}
+.Card .card-text{
+   color: aqua;
+   font-weight: 400;
+}
+.Card a{
+   text-decoration: none;
+   color: aliceblue;
 }
