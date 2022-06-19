@@ -14,10 +14,10 @@ export const ProyectsComp = () => {
     },
     {
       id: 2,
-      titulo: "compra de tickets",
-      github: "https://user-images.githubusercontent.com/83146564/137408912-013f0d0c-37d1-4dc2-a1b5-77356c1003f3.png",
-      vercel: "https://tineo-bootstrap.vercel.app/index.html",
-      img: "https://user-images.githubusercontent.com/83146564/137408912-013f0d0c-37d1-4dc2-a1b5-77356c1003f3.png",
+      titulo: "calculadora",
+      github: "https://github.com/RafDes21/calcu-react.git",
+      vercel: "https://calculadora-liard-two.vercel.app/",
+      img: "https://i.imgur.com/lVgR8Bu.jpeg",
     },
     {
       id: 3,
@@ -26,6 +26,14 @@ export const ProyectsComp = () => {
       vercel: "https://catering-mu.vercel.app/",
       img: "https://thegrandeseventos.com/pic/kekabose1.png",
     },
+    {
+      
+      id: 4,
+      titulo: "compra de tickets",
+      github: "https://user-images.githubusercontent.com/83146564/137408912-013f0d0c-37d1-4dc2-a1b5-77356c1003f3.png",
+      vercel: "https://tineo-bootstrap.vercel.app/index.html",
+      img: "https://user-images.githubusercontent.com/83146564/137408912-013f0d0c-37d1-4dc2-a1b5-77356c1003f3.png",
+    }
   ];
   return (
     <Container className="proyects">
