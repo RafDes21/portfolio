@@ -1,0 +1,114 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+.navbar.active {
+  background-color: var(--color-primary);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.navbar-container h1 {
+  font-size: 40px;
+  text-shadow: 2px 2px 2px #000, -3px -3px 5px var(--color-secondary);
+}
+.navbar-container .nav-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.navbar-container .nav-menu li {
+  list-style: none;
+  overflow: hidden;
+  padding: 5px 0;
+}
+
+.navbar-container .nav-menu li a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 900;
+  position: relative;
+  font-size: 20px;
+}
+
+.navbar-container .nav-menu li a::after {
+  content: "";
+  position: absolute;
+  left: -5px;
+  bottom: -5px;
+  width: 120%;
+  transform: translateX(-100%);
+  border-bottom: 2px solid var(--color-secondary);
+}
+.navbar-container .nav-menu li a:hover:after {
+  transform: translateX(4%);
+  transition: all 0.5s;
+  width: 100%;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .navbar{
+    height: 60px;
+  }
+  .navbar-container h1 {
+    font-size: 24px;
+    text-shadow: 2px 2px 2px #000, -3px -3px 5px var(--color-secondary);
+  }
+  .menu-icon {
+    display: block;
+    font-size: 30px;
+    margin-right: 10px;
+    z-index: 10;
+  }
+  .navbar-container {
+    position: absolute;
+    
+  }
+  .navbar-container h1 {
+    margin-left: 10px;
+  }
+  .navbar-container .nav-menu {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    top: -22px;
+    padding: 0;
+    transition: all 0.5s;
+    transform: translateX(0);
+    background-color: var(--text-color);
+    height: 100vh;
+  }
+  .navbar-container .nav-menu li a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 900;
+    font-size: 20px;
+  }
+
+  .navbar-container .nav-menu.active {
+    transform: translateX(-100%);
+    transition: all 0.5s;
+  }
+}

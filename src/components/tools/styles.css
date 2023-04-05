@@ -1,0 +1,26 @@
+.container-cards {
+  overflow: hidden;
+}
+.slider-cards {
+  display: flex;
+  animation: scroll 40s linear infinite;
+  width: calc(150px * 18);
+ 
+}
+
+.content-card {
+  min-width: 150px;
+  padding: 10px;
+  background-color: var(--black-transparent);
+  margin-right:3px;
+  border-radius: 8px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-150px * 9));
+  }
+}

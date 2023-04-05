@@ -1,0 +1,25 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  height: 100px;
+  background-color: var(--color-primary);
+}
+.footer h5{
+  text-shadow: 2px 2px 2px #000, -3px -3px 5px var(--color-secondary);
+}
+
+.redes .icon-red {
+  font-size: 30px;
+  margin: 0 10px;
+  color: var(--white);
+  filter: drop-shadow(2px 2px 2px var(--black));
+}
+
+.redes .icon-red:hover {
+  transform: scale(1.2);
+  transition: all 0.1s;
+}
