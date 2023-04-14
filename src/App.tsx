@@ -1,10 +1,16 @@
 import "./app.css";
+import { Footer } from "./components";
 import Home from "./home";
 
 const App = () => {
   return (
-    <div className="app">
-      <Home />
+    <div>
+      <div className="app">
+        <Home />
+      </div>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };

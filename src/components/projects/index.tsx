@@ -4,9 +4,9 @@ import ItemProject from "./ItemProject";
 import { PROJECTS } from "../../db";
 
 const Projects = () => {
-  const Content = PROJECTS.map((item) => (
+  const Content = PROJECTS.map((item, index) => (
     <ItemProject
-      key={item.title}
+      key={index}
       title={item.title}
       git={item.gitHub}
       web={item.web}

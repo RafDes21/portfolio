@@ -1,4 +1,4 @@
-import { About, Footer, NavBar, Projects, Tools } from "../components";
+import { About, NavBar, Projects, Tools } from "../components";
 import "./styles.css";
 
 const Home = () => {
@@ -14,9 +14,6 @@ const Home = () => {
       <div className="container-projects" id="projects">
         <h1>PROYECTOS</h1>
         <Projects />
-      </div>
-      <div className="footer">
-        <Footer />
       </div>
     </div>
   );
