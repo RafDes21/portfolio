@@ -1,13 +1,21 @@
-import "./styles.css"
+import { TOOLS } from "../../db";
+import "./styles.css";
 
-const Icons = () => {
-  return (
-    <div className="icon">
-      <img src="https://hopetutors.com/wp-content/uploads/2017/03/nodejs-logo-1.png" alt="icon" />
-      <img src="https://hopetutors.com/wp-content/uploads/2017/03/nodejs-logo-1.png" alt="icon" />
-      <img src="https://hopetutors.com/wp-content/uploads/2017/03/nodejs-logo-1.png" alt="icon" />
-    </div>
-  )
+interface Props {
+  tools: number[];
 }
 
-export default Icons
+const Icons: React.FC<Props> = ({ tools }) => {
+  if (!tools) {
+    return <h1>Loading</h1>;
+  }
+
+  const icons = tools.map((id) => {
+    const tool = TOOLS.find((item) => item.id === id);
+    return <img key={id} src={tool?.logo} alt={tool?.name} />;
+  });
+
+  return <div className="icon">{icons}</div>;
+};
+
+export default Icons;

@@ -11,7 +11,7 @@ html {
   --black: #000;
   --color-primary: #808080;
   --color-secondary: #8c8c8c;
-  --black-transparent: #00000020;
+  --black-transparent: #00000080;
   --font-robot: "Roboto", sans-serif;
   --text-color:#404040;
 }
@@ -26,3 +26,4 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+

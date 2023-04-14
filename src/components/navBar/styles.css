@@ -96,7 +96,7 @@
     top: -22px;
     padding: 0;
     transition: all 0.5s;
-    transform: translateX(0);
+    transform: translateX(-100%);
     background-color: var(--text-color);
     height: 100vh;
   }
@@ -108,7 +108,7 @@
   }
 
   .navbar-container .nav-menu.active {
-    transform: translateX(-100%);
+    transform: translateX(0);
     transition: all 0.5s;
   }
 }

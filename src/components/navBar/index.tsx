@@ -4,8 +4,8 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import "./styles.css";
 
 const NavBar = () => {
-  const [menu, setMenu] = useState(true);
-  const [navbar, setNavbar] = useState(true);
+  const [menu, setMenu] = useState(false);
+  const [navbar, setNavbar] = useState(false);
 
   const changeMenu = () => setMenu(!menu);
   const changeBackground = () => {
@@ -22,7 +22,7 @@ const NavBar = () => {
     <nav className={navbar ? "navbar" : "navbar active"}>
       <div className="navbar-container">
         <h1>RafCoder</h1>
-        <ul className={menu ? "nav-menu" : "nav-menu active"}>
+        <ul className={menu ? "nav-menu active" : "nav-menu"}>
           <li onClick={changeMenu}>
             <a href="#about">Acerca de Mí</a>
           </li>
