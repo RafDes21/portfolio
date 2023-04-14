@@ -5,7 +5,7 @@ import "./styles.css";
 
 const NavBar = () => {
   const [menu, setMenu] = useState(false);
-  const [navbar, setNavbar] = useState(false);
+  const [navbar, setNavbar] = useState(true);
 
   const changeMenu = () => setMenu(!menu);
   const changeBackground = () => {
