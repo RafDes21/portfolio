@@ -46,11 +46,14 @@
   cursor: pointer;
   color: var(--white);
   filter: drop-shadow(3px 3px 5px var(--white));
- 
 }
 
 .item-project .show-project .content-icons-links .icon-link:hover {
   transform: scale(1.2);
+}
+.item-project .show-project .content-icons-links .icon-link.active:hover {
+  color: var(--black);
+  filter: drop-shadow(1px 2px 3px rgb(19, 180, 19));
 }
 
 /*init icon*/
@@ -68,7 +71,6 @@
   justify-content: space-between;
   flex-direction: column;
   gap: 5px;
-
 }
 .icon img {
   width: 30px;

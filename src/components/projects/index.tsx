@@ -12,6 +12,7 @@ const Projects = () => {
       web={item.web}
       image={item.image}
       tools={item.tools}
+      back={item.back}
     />
   ));
 

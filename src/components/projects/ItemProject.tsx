@@ -2,17 +2,26 @@ import { useState } from "react";
 import { TbWorldUpload } from "react-icons/tb";
 import { BsGithub } from "react-icons/bs";
 import Icons from "./Icons";
+import logo from "../../assets/patient.png";
 import "./styles.css";
 
 interface Project {
   title: string;
   git: string;
   web: string;
-  image:string,
+  image: string;
+  back?: string;
   tools: number[];
 }
 
-const ItemProject: React.FC<Project> = ({ title, git, web, tools, image }) => {
+const ItemProject: React.FC<Project> = ({
+  title,
+  git,
+  web,
+  tools,
+  image,
+  back,
+}) => {
   const [show, setShow] = useState(false);
 
   const onChangeSetShow = () => {
@@ -29,10 +38,7 @@ const ItemProject: React.FC<Project> = ({ title, git, web, tools, image }) => {
       onMouseOver={onChangeMOuse}
       onMouseOut={onChangeSetShow}
     >
-      <img
-        src={image}
-        alt={title}
-      />
+      <img src={image || logo} alt={title} />
       <h1 className="itemTitle">{title}</h1>
       <div
         className="show-project"
@@ -49,6 +55,13 @@ const ItemProject: React.FC<Project> = ({ title, git, web, tools, image }) => {
           <a href={git} target="_blank">
             <BsGithub className="icon-link" />
           </a>
+          {back ? (
+            <a href={back} target="_blank">
+              <BsGithub className="icon-link active" />
+            </a>
+          ) : (
+            ""
+          )}
         </div>
       </div>
       <div className="content-icons">

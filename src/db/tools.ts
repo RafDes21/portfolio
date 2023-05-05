@@ -52,13 +52,18 @@ export const TOOLS = [
   },
   {
     id: 11,
-    logo: "https://cloudnweb.dev//static/684c6918971092d91b495ea5d00b76f3/01441/redux-banner.png",
+    logo: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/redux-icon.png",
     name: "Redux-Toolkit",
   },
   {
     id: 12,
     logo: "https://cdn.iconscout.com/icon/free/png-256/mongodb-3629020-3030245.png",
     name: "MongoDB",
+  },
+  {
+    id: 13,
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Logo_material_design.svg/2560px-Logo_material_design.svg.png",
+    name: "MaterialUI",
   },
   {
     id: 1,
@@ -113,7 +118,7 @@ export const TOOLS = [
   },
   {
     id: 11,
-    logo: "https://cloudnweb.dev//static/684c6918971092d91b495ea5d00b76f3/01441/redux-banner.png",
+    logo: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/redux-icon.png",
     name: "Redux-Toolkit",
   },
   {
@@ -121,4 +126,9 @@ export const TOOLS = [
     logo: "https://cdn.iconscout.com/icon/free/png-256/mongodb-3629020-3030245.png",
     name: "MongoDB",
   },
+  {
+    id:13,
+    logo:"https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Logo_material_design.svg/2560px-Logo_material_design.svg.png",
+    name:"MaterialUI"  
+    },
 ];
