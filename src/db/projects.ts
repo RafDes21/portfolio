@@ -16,7 +16,7 @@ export const PROJECTS = [
     {
         title: "Patients Control",
         gitHub: "https://github.com/RafDes21/frontend.git",
-        web:"https://gestions-iota.vercel.app/",
+        web:"https://frontend-rafdes21.vercel.app/",
         image:"",
         back:"https://github.com/RafDes21/backend.git",
         tools:[10, 2, 12, 6, 9, 13]
