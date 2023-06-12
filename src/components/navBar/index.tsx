@@ -6,13 +6,19 @@ import "./styles.css";
 const NavBar = () => {
   const [menu, setMenu] = useState(false);
   const [navbar, setNavbar] = useState(true);
+  const [togle, setTogle] = useState(true);
 
-  const changeMenu = () => setMenu(!menu);
+  const changeMenu = () => {
+    setTogle(!togle);
+    setMenu(!menu);
+  };
   const changeBackground = () => {
     if (window.scrollY >= 100) {
       setNavbar(false);
+      setTogle(false);
     } else {
       setNavbar(true);
+      setTogle(true);
     }
   };
 
@@ -20,7 +26,7 @@ const NavBar = () => {
 
   return (
     <nav className={navbar ? "navbar" : "navbar active"}>
-      <div className="navbar-container">
+      <div className={navbar? "navbar-container": "navbar-container active"}>
         <h1>RafCoder</h1>
         <ul className={menu ? "nav-menu active" : "nav-menu"}>
           <li onClick={changeMenu}>
@@ -33,7 +39,10 @@ const NavBar = () => {
             <a href="#projects">Proyectos</a>
           </li>
         </ul>
-        <div className="menu-icon" onClick={changeMenu}>
+        <div
+          className={togle ? "menu-icon" : "menu-icon active"}
+          onClick={changeMenu}
+        >
           {menu ? <AiOutlineClose /> : <GiHamburgerMenu />}
         </div>
       </div>

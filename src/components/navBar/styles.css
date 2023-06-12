@@ -10,7 +10,7 @@
   z-index: 5;
 }
 .navbar.active {
-  background-color: var(--black-transparent);
+  background-color: var(--color-primary);
 }
 
 .navbar-container {
@@ -24,7 +24,13 @@
 .navbar-container h1 {
   font-size: 40px;
   text-shadow: 2px 2px 2px #000, -3px -3px 5px var(--color-secondary);
+  color: var(--text-color-sub);
 }
+
+.navbar-container.active h1 {
+  color: var(--white);
+}
+
 .navbar-container .nav-menu {
   display: flex;
   flex-direction: row;
@@ -39,11 +45,15 @@
 
 .navbar-container .nav-menu li a {
   text-decoration: none;
-  color: var(--white);
+
   font-weight: 900;
   position: relative;
   font-size: 20px;
-  text-shadow: 2px 2px 3px var(--black);
+  text-shadow: 1px 1px 2px var(--black);
+  color: var(--text-color-sub);
+}
+.navbar-container.active .nav-menu li a {
+  color: var(--white);
 }
 
 .navbar-container .nav-menu li a::after {
@@ -66,7 +76,7 @@
 }
 
 @media (max-width: 600px) {
-  .navbar{
+  .navbar {
     height: 60px;
   }
   .navbar-container h1 {
@@ -78,10 +88,14 @@
     font-size: 30px;
     margin-right: 10px;
     z-index: 10;
+    color: var(--color-primary);
+  }
+
+  .menu-icon.active {
+    color: var(--white);
   }
   .navbar-container {
     position: absolute;
-    
   }
   .navbar-container h1 {
     margin-left: 10px;
@@ -98,7 +112,7 @@
     padding: 0;
     transition: all 0.5s;
     transform: translateX(-100%);
-    background-color: var(--text-color);
+    background-color: var(--color-primary);
     height: 100vh;
   }
   .navbar-container .nav-menu li a {
