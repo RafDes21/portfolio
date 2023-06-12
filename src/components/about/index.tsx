@@ -1,5 +1,5 @@
 import "./styles.css";
-import pdf from "../../pdf/cvTineo.pdf";
+import pdf from "../../pdf/CVIsra.pdf";
 import { FaHandPointRight } from "react-icons/fa";
 import { BsCloudArrowDownFill } from "react-icons/bs";
 import { Animation } from "./Animation";

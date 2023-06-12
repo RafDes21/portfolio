@@ -52,7 +52,7 @@ export const TOOLS = [
   },
   {
     id: 11,
-    logo: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/redux-icon.png",
+    logo: "https://cdn.freebiesupply.com/logos/large/2x/redux-logo-png-transparent.png",
     name: "Redux-Toolkit",
   },
   {
@@ -118,7 +118,7 @@ export const TOOLS = [
   },
   {
     id: 11,
-    logo: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/redux-icon.png",
+    logo: "https://cdn.freebiesupply.com/logos/large/2x/redux-logo-png-transparent.png",
     name: "Redux-Toolkit",
   },
   {
