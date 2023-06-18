@@ -11,7 +11,7 @@
 .content-card {
   min-width: 150px;
   padding: 10px;
-  background-color: var(--black-transparent);
+  background-color: var(--box-background);
   margin-right:3px;
   border-radius: 8px;
 }

@@ -25,24 +25,24 @@
   font-size: 20px;
   text-decoration: none;
   position: relative;
-  background-color: var(--text-color);
+  background-color: var(--color-primary);
 }
 .about .cv a .download {
   margin: 0 10px;
   color: var(--color-secondary);
 }
-.about .cv a .download:hover {
-  color: var(--white);
+/* .about .cv a .download:hover {
+  color: var(--color-primary);
 }
 
 .about .cv a:hover {
-  background-color: var(--color-secondary);
+  background-color: var(--box-background);
   transform: scale(1);
   transition: all 0.3s;
   border: 1px solid #010101;
   box-shadow: 2px 2px 5px #010101;
-  color: var(--white);
-}
+  color: var(--color-primary);
+} */
 .about .cv a .icons {
   color: var(--white);
 }

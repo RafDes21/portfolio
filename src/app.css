@@ -9,9 +9,10 @@ html {
   --background: #cccccc;
   --white: #fff;
   --black: #000;
-  --color-primary: #144f67;
-  --color-secondary: #31a9d8;
-  --black-transparent: #31a9d8b2;
+  --color-primary: #263E3E;
+  --color-secondary: #F4F5EF;
+  --box-background: #F4F5EF;
+  --black-transparent: #263e3eaf;
   --font-robot: "Roboto", sans-serif;
   --text-color:#404040;
   --text-color-sub: #144f67;
