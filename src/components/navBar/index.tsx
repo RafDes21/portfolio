@@ -13,7 +13,7 @@ const NavBar = () => {
     setMenu(!menu);
   };
   const changeBackground = () => {
-    if (window.scrollY >= 100) {
+    if (window.scrollY >= 70) {
       setNavbar(false);
       setTogle(false);
     } else {

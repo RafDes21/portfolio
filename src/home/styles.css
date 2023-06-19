@@ -5,8 +5,10 @@
   padding: 100px 0;
 }
 .container-projects h1 {
+  color: var(--color-primary);
+  font-weight: 900;
   font-size: 40px;
-  text-shadow: 2px 2px 2px var(--color-secondary), -3px -3px 5px var(--black);
+  text-shadow: 2px 2px 2px var(--color-sub), -3px -3px 5px var(--color-sub);
   text-align: center;
 }
 .container-tools {

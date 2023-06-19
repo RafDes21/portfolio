@@ -11,21 +11,24 @@ const About = () => {
       <h2>DESARROLLADOR DE SOFTWARE</h2>
       <p>
         Actualmente radico en Argentina,
-        <br /> desde el 2020 he estado capacitandome de manera autodidacta y cursos,
-        <br /> tengo conocimientos en <b>lógica de programación</b>, luego me preparé con <b>Javascript</b>,
-        <br /> manejando en el frontend la libreria de <b>React.js</b> y <b>React-Native para App Mobile</b> y en el Backend <b>Node.js</b> como entorno de desarrollo de Javascript.
-        <br/>agrego también el manejo de <b>Base de Datos</b> como MongoDB Y MysQL.
+        <br /> desde el 2020 he estado capacitandome de manera autodidacta y
+        cursos,
+        <br /> tengo conocimientos en <b>lógica de programación</b>, luego me
+        preparé con <b>Javascript</b>,
+        <br /> manejando en el frontend la libreria de <b>React.js</b> y{" "}
+        <b>React-Native para App Mobile</b> y en el Backend <b>Node.js</b> como
+        entorno de desarrollo de Javascript.
+        <br />
+        agrego también el manejo de <b>Base de Datos</b> como MongoDB Y MysQL.
       </p>
       <div className="cv">
-        <a href={pdf} download>
-          <span className="icons icon-primary">
+        <span>
+          <a href={pdf} download>
             <FaHandPointRight />
-          </span>
-          <span className="download"> Download CV</span>
-          <span className="icons icon-secondary">
+            <span className="download"> Download CV</span>
             <BsCloudArrowDownFill />
-          </span>
-        </a>
+          </a>
+        </span>
       </div>
       <Animation />
     </div>
