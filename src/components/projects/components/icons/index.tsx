@@ -1,11 +1,8 @@
-import { TOOLS } from "../../db";
-import "./styles.css";
+import { TOOLS } from "../../../../db";
+import { Tools } from "../../types/types";
+import "../../styles.css";
 
-interface Props {
-  tools: number[];
-}
-
-const Icons: React.FC<Props> = ({ tools }) => {
+const Icons: React.FC<Tools> = ({ tools }) => {
   if (!tools) {
     return <h1>Loading</h1>;
   }

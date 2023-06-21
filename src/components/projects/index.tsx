@@ -1,22 +1,13 @@
+import { PROJECTS } from "../../db";
+import { ProjectList } from "./components";
 import "./styles.css";
 
-import ItemProject from "./ItemProject";
-import { PROJECTS } from "../../db";
-
 const Projects = () => {
-  const Content = PROJECTS.map((item, index) => (
-    <ItemProject
-      key={index}
-      title={item.title}
-      git={item.gitHub}
-      web={item.web}
-      image={item.image}
-      tools={item.tools}
-      back={item.back}
-    />
-  ));
-
-  return <div className="projects">{Content}</div>;
+  return (
+    <div className="projects">
+      <ProjectList projects={PROJECTS} />
+    </div>
+  );
 };
 
 export default Projects;

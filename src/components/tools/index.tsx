@@ -1,4 +1,4 @@
-import Card from "../card";
+import {Card} from "./components";
 import { TOOLS } from "../../db";
 import "./styles.css";
 

@@ -1,22 +1,14 @@
 import { useState } from "react";
 import { TbWorldUpload } from "react-icons/tb";
 import { BsGithub } from "react-icons/bs";
-import Icons from "./Icons";
-import logo from "../../assets/patient.png";
-import "./styles.css";
-
-interface Project {
-  title: string;
-  git: string;
-  web: string;
-  image: string;
-  back?: string;
-  tools: number[];
-}
+import Icons from "../icons";
+import logo from "../../../../assets/patient.png";
+import { Project } from "../../types/types";
+import "../../styles.css";
 
 const ItemProject: React.FC<Project> = ({
   title,
-  git,
+  gitHub,
   web,
   tools,
   image,
@@ -24,19 +16,19 @@ const ItemProject: React.FC<Project> = ({
 }) => {
   const [show, setShow] = useState(false);
 
-  const onChangeSetShow = () => {
+  const onMouseOut = () => {
     setShow(false);
   };
 
-  const onChangeMOuse = () => {
+  const onMouseOver = () => {
     setShow(true);
   };
 
   return (
     <div
       className="item-project"
-      onMouseOver={onChangeMOuse}
-      onMouseOut={onChangeSetShow}
+      onMouseOver={onMouseOver}
+      onMouseOut={onMouseOut}
     >
       <img src={image || logo} alt={title} />
       <h1 className="itemTitle">{title}</h1>
@@ -52,7 +44,7 @@ const ItemProject: React.FC<Project> = ({
           <a href={web} target="_blank">
             <TbWorldUpload className="icon-link" />
           </a>
-          <a href={git} target="_blank">
+          <a href={gitHub} target="_blank">
             <BsGithub className="icon-link" />
           </a>
           {back ? (
