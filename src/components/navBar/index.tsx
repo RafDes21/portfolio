@@ -2,31 +2,24 @@ import { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
 import "./styles.css";
+import useScroll from "../../hooks/useScroll";
 
-const NavBar = () => {
+const NavBar = (): JSX.Element => {
   const [menu, setMenu] = useState(false);
-  const [navbar, setNavbar] = useState(true);
-  const [togle, setTogle] = useState(true);
 
-  const changeMenu = () => {
-    setTogle(!togle);
+  const scrollY = useScroll();
+
+  const changeMenu = (): void => {
     setMenu(!menu);
   };
-  const changeBackground = () => {
-    if (window.scrollY >= 70) {
-      setNavbar(false);
-      setTogle(false);
-    } else {
-      setNavbar(true);
-      setTogle(true);
-    }
-  };
-
-  window.addEventListener("scroll", changeBackground);
 
   return (
-    <nav className={navbar ? "navbar" : "navbar active"}>
-      <div className={navbar? "navbar-container": "navbar-container active"}>
+    <nav className={scrollY >= 70 ? "navbar active" : "navbar"}>
+      <div
+        className={
+          scrollY >= 70 ? "navbar-container active" : "navbar-container"
+        }
+      >
         <h1>RafCoder</h1>
         <ul className={menu ? "nav-menu active" : "nav-menu"}>
           <li onClick={changeMenu}>
@@ -40,7 +33,7 @@ const NavBar = () => {
           </li>
         </ul>
         <div
-          className={togle ? "menu-icon" : "menu-icon active"}
+          className={scrollY >= 70 ? "menu-icon active" : "menu-icon"}
           onClick={changeMenu}
         >
           {menu ? <AiOutlineClose /> : <GiHamburgerMenu />}
