@@ -7,6 +7,10 @@
 .about {
   max-width: 1440px;
   margin: 0 auto;
+  display: flex;
+}
+.about .about-content-1, .about .about-content-2{
+  width: 50%;
 }
 .about h3 {
   font-size: 40px;
