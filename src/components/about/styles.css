@@ -1,6 +1,7 @@
 .about {
   text-align: center;
   color: var(--text-color);
+  background-color: aqua;
 }
 .about h3 {
   font-size: 40px;

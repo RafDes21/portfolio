@@ -6,11 +6,13 @@ import useScroll from "../../hooks/useScroll";
 
 const NavBar = (): JSX.Element => {
   const [menu, setMenu] = useState(false);
+  const [iconColor, setIconColor] = useState(false)
 
   const scrollY = useScroll();
 
   const changeMenu = (): void => {
     setMenu(!menu);
+    setIconColor(!iconColor)
   };
 
   return (
@@ -33,8 +35,8 @@ const NavBar = (): JSX.Element => {
           </li>
         </ul>
         <div
-          className={scrollY >= 70 ? "menu-icon active" : "menu-icon"}
           onClick={changeMenu}
+          className={scrollY >= 70 || iconColor ? "menu-icon active" : "menu-icon"}
         >
           {menu ? <AiOutlineClose /> : <GiHamburgerMenu />}
         </div>

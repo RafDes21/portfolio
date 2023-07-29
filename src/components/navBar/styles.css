@@ -45,10 +45,9 @@
 
 .navbar-container .nav-menu li a {
   text-decoration: none;
-
   font-weight: 900;
   position: relative;
-  font-size: 20px;
+  font-size: 26px;
   text-shadow: 1px 1px 2px var(--black);
   color: var(--text-color-sub);
 }
@@ -75,7 +74,7 @@
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .navbar {
     height: 60px;
   }
@@ -89,6 +88,7 @@
     margin-right: 10px;
     z-index: 10;
     color: var(--color-primary);
+    cursor: pointer;
   }
 
   .menu-icon.active {
