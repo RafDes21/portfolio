@@ -1,7 +1,12 @@
-.about {
+.about-container {
   text-align: center;
   color: var(--text-color);
-  background-color: aqua;
+  background-color: var(--color-secondary);
+  position: relative;
+}
+.about {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .about h3 {
   font-size: 40px;
@@ -52,18 +57,27 @@
 /*animation*/
 .animation {
   font-size: 20px;
-  padding-top: 60px;
-  width: 90%;
-  margin: 0 auto;
+  position: absolute;
+  bottom: -4rem;
+  width: 50%;
+  background-color: var(--color-primary);
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--white);
+  border-radius: 8px;
+
 }
 .animation .animation-box {
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
+  padding: 1rem 3rem;
+}
+.animation .animation-box p{
+  font-size: 1rem;
 }
 .animation .animation-box .computer {
-  font-size: 40px;
+  font-size: 2rem;
 }
 .animation .animation-api {
   font-size: 15px;
@@ -77,7 +91,7 @@
   animation-name: api;
   animation-duration: 5s;
   animation-iteration-count: infinite;
-  padding: 3px;
+  
 }
 
 @keyframes api {
@@ -121,12 +135,7 @@
       border-radius: 5px;
     }
   }
-  .animation {
-    font-size: 20px;
-    padding-top: 100px;
-    width: 70%;
-    margin: 0 auto;
-  }
+
 }
 
 @media (min-width: 900px) {

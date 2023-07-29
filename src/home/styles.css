@@ -1,6 +1,7 @@
-.container-about {
+/* .container-about {
   padding-top: 150px;
-}
+  background-color: var(--color-primary);
+} */
 .container-projects {
   padding: 100px 0;
 }
