@@ -6,11 +6,11 @@ export const Animation = () => {
   return (
     <div className="animation">
       <div className="animation-box">
-        <div>
+        <div className="animation-box__computer">
           <MdOutlineComputer className="computer" />
           <p>FRONT END</p>
         </div>
-        <div>
+        <div className="animation-box__computer">
           <MdOutlineComputer className="computer" />
           <p>BACK END</p>
         </div>
