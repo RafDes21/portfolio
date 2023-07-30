@@ -54,7 +54,7 @@
   .about-container .about {
     display: flex;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1240px;
     height: 100%;
   }
   .about-container .about .about-content-1 {
