@@ -15,9 +15,19 @@
 .container-tools {
   padding-top: 100px;
 }
+.container-tools h2{
+  color: var(--color-primary);
+}
 
-@media (max-width: 500px) {
-  .container-about {
-    padding: 100px 10px 0 10px;
+@media (min-width: 768px) {
+  .container-tools h2{
+    font-size: var(--text-desktop-title);
+    text-align: center;
+  }
+}
+@media (min-width: 1024px) {
+  .container-tools h2{
+    font-size: var(--text-desktop-title);
+    text-align: center;
   }
 }

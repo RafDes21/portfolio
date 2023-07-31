@@ -1,0 +1,36 @@
+.card{
+    display: flex;
+    padding: 10px 10px 10px 0;
+    background-color: var(--color-secondary);
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 3px var(--color-primary);
+}
+.card__img{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card__img img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.card__description{
+    width: 70%;
+}
+.card__description .card__description-title{
+    font-size: var(--text-mobile-text);
+    font-weight: 500;
+}
+.card__description .card__description-detail{
+    font-size: 12px;
+}
+.card__description .card__description-periodState{
+    display: flex;
+    justify-content:space-between ;
+    font-size: 12px;
+    margin-top: 5px;
+}
