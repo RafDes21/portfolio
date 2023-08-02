@@ -1,7 +1,7 @@
 export const STUDIES=[
     {
         id:1,
-        title: "FULL STACK JAVA",
+        title: "FULL STACK JAVA (alura latam)",
         img:"https://play-lh.googleusercontent.com/yDjaHCaOn_O89vnY7eOKH6ElEBtJrmN2CSI4yhiP1_GVC2zrxXWSFGxO0lt9-CU0mV4",
         description: "Lógica de  programación, frontend y backend, habilidades blandas SCRUM ",
         state: true,
