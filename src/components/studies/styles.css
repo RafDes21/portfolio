@@ -29,6 +29,7 @@
   }
   .studies__contentTwo {
     width: 50%;
+    overflow-y: auto;
   }
 }
 
@@ -50,7 +51,7 @@
       height: 300px;
       border-radius: 10px;
       object-fit: cover;
-      
+
     }
     .studies__contentTwo {
       width: 40%;
