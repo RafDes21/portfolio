@@ -26,7 +26,7 @@ export const STUDIES=[
     {
         id:4,
         title: "PROGRAMACION",
-        img:"https://ucaecono.hiringroomcampus.com/assets/media/ucaecono/company_5dc96be808a25a68b1491521.png",
+        img:"https://ssaalvtesting.online/wp-content/uploads/2021/12/logo_agencia_solo.gif",
         description: "Realice mis estudios en programación, tanto nivel inicial como nivel medio",
         state: true,
         period:"2015 - 2017"
