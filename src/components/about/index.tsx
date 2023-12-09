@@ -13,6 +13,7 @@ const About = () => {
           <div className="about-content-1__detail">
             <h3>Hola, me llamo Israel</h3>
             <h2>DESARROLLADOR DE SOFTWARE</h2>
+            <h3>WeB Y Mobile</h3>
             <div className="cv">
               <span>
                 <a href={pdf} download>
