@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -13,9 +13,10 @@ html {
   --black: #000;
   --color-primary: #263e3e;
   --color-secondary: #f4f5ef;
+  --color-accent:#43bccd;
   --box-background: #f4f5ef;
   --black-transparent: #263e3eaf;
-  --font-robot: "Roboto", sans-serif;
+  --font-portfolio: 'Open Sans', sans-serif;
   --text-color: #263e3e;
   --color-sub: #b3ba91;
   --text-color-sub: #144f67;
@@ -26,14 +27,17 @@ html {
   --text-tablet-subTitle: 19px;
   --text-tablet-text: 16px;
   --text-desktop-title: 40px;
-  --text-desktop-subTitle:24px;
+  --text-desktop-subTitle:20px;
   --text-desktop-text: 18px;
+  --text-about-me-desktop: 14px;
+  --text-about-me-mobile: 8px;
+  --text-about-me-tablet: 12px
 }
 
 body {
   background-color: var(--white);
   color: var(--white);
-  font-family: var(--font-robot);
+  font-family: var(--font-portfolio);
 }
 
 .app {

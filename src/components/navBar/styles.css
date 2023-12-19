@@ -13,8 +13,8 @@
   max-width: 1240px;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px;
   height: 100%;
+  padding: 0 10px;
 }
 .navbar-container .nav-menu {
   display: flex;
@@ -56,6 +56,9 @@
 .navbar-container.active h1 {
   color: var(--white);
 }
+.navbar-container.active ul li a:hover{
+  color: var(--color-accent);
+}
 
 .navbar-container .nav-menu li {
   list-style: none;
@@ -65,11 +68,14 @@
 
 .navbar-container .nav-menu li a {
   text-decoration: none;
-  font-weight: 400;
   position: relative;
-  font-size: var(--text-mobile-title);
-  text-shadow: 1px 1px 2px var(--black);
+  font-size: var(--text-mobile-subTitle);
   color: var(--white);
+  text-transform: uppercase;
+}
+
+.navbar-container .nav-menu li a:hover{
+  color: var(--color-accent);
 }
 
 @media (min-width: 768px) {
@@ -79,8 +85,8 @@
     left: 0;
   }
 
-  .navbar-container {
-    padding: 0 20px;
+  .navbar-container{
+    padding: 0 40px;
     margin: 0 auto;
   }
   .navbar-container h1 {
@@ -128,168 +134,16 @@
     height: 70px;
     background-color: var(--color-secondary);
   }
+  .navbar-container{
+    padding: 0 80px;
+  }
 
   .navbar-container h1 {
-    font-size: var(--text-desktop-subTitle);
+    font-size: var(--text-desktop-title);
+    font-weight: 600;
   }
   .navbar-container .nav-menu li a {
     font-size: var(--text-desktop-subTitle);
     text-shadow: none;
   }
 }
-
-/* .navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 5;
-}
-.navbar.active {
-  background-color: var(--color-primary);
-}
-
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: 1440px;
-}
-
-.navbar-container h1 {
-  font-size: 30px;
-  text-shadow: 2px 2px 2px #000, -3px -3px 5px var(--color-secondary);
-  color: var(--text-color-sub);
-}
-
-.navbar-container.active h1 {
-  color: var(--white);
-}
-
-.navbar-container .nav-menu {
-  display: flex;
-  flex-direction: row;
-  gap: 50px;
-}
-
-.navbar-container .nav-menu li {
-  list-style: none;
-  overflow: hidden;
-  padding: 5px 0;
-}
-
-.navbar-container .nav-menu li a {
-  text-decoration: none;
-  font-weight: 900;
-  position: relative;
-  font-size: 26px;
-  text-shadow: 1px 1px 2px var(--black);
-  color: var(--text-color-sub);
-}
-.navbar-container.active .nav-menu li a {
-  color: var(--white);
-}
-
-.navbar-container .nav-menu li a::after {
-  content: "";
-  position: absolute;
-  left: -5px;
-  bottom: -5px;
-  width: 120%;
-  transform: translateX(-100%);
-  border-bottom: 2px solid var(--black);
-}
-.navbar-container .nav-menu li a:hover:after {
-  transform: translateX(4%);
-  transition: all 0.5s;
-  width: 100%;
-}
-
-.menu-icon {
-  display: none;
-}
-
-@media (max-width: 425px) {
-  .navbar {
-    height: 50px;
-  }
-  .navbar-container h1 {
-    font-size: 24px;
-    font-weight: 900;
-    text-shadow: 2px 2px 2px #000, -3px -3px 5px var(--color-secondary);
-  }
-  .menu-icon {
-    display: block;
-    font-size: 24px;
-    margin-right: 10px;
-    z-index: 10;
-    color: var(--color-primary);
-    cursor: pointer;
-  }
-
-  .menu-icon.active {
-    color: var(--white);
-  }
-  .navbar-container {
-    position: absolute;
-  }
-  .navbar-container h1 {
-    margin-left: 10px;
-  }
-  .navbar-container .nav-menu {
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    width: 100%;
-    top: -22px;
-    padding: 0;
-    transition: all 0.5s;
-    transform: translateX(-100%);
-    background-color: var(--color-primary);
-    height: 100vh;
-  }
-  .navbar-container .nav-menu li a {
-    text-decoration: none;
-    color: var(--white);
-    font-weight: 900;
-    font-size: 20px;
-  }
-
-  .navbar-container .nav-menu.active {
-    transform: translateX(0);
-    transition: all 0.5s;
-  }
-}
-@media (max-width: 991px) {
-  .navbar {
-    height: 60px;
-  }
-  .navbar-container h1 {
-    font-size: 30px;
-    font-weight: 900;
-    text-shadow: 2px 2px 2px #000, -3px -3px 5px var(--color-secondary);
-  }
-
-  .navbar-container {
-    position: absolute;
-  }
-  .navbar-container h1 {
-    margin-left: 20px;
-  }
-  .navbar-container .nav-menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-
-
-  }
-} */

@@ -9,7 +9,7 @@
   background-size: cover;
   background-color: #00000055;
   background-blend-mode: multiply;
-  height: 40vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,6 +24,9 @@
 }
 .about-container .about .about-content-1 .about-content-1__detail h2 {
   font-size: var(--text-mobile-title);
+}
+.about_me{
+  font-size: var(--text-about-me-mobile);
 }
 .about .cv {
   margin-top: 10px;
@@ -75,6 +78,9 @@
   .about-container .about .about-content-1 .about-content-1__detail h2 {
     font-size: var(--text-tablet-title);
   }
+  .about_me{
+    font-size: var(--text-about-me-tablet);
+  }
   .about .cv {
     margin-top: 30px;
   }
@@ -115,6 +121,9 @@
   .about-container .about .about-content-1 .about-content-1__detail h2 {
     font-size: var(--text-desktop-title);
   }
+  .about_me{
+    font-size: var(--text-about-me-desktop);
+  }
   .about .cv {
     margin-top: 50px;
   }
@@ -126,83 +135,7 @@
     padding: 0;
   }
 }
-/* .about-container {
-  color: var(--text-color);
-  background-color: var(--color-secondary);
-  position: relative;
-}
-.about {
-  max-width: 1440px;
-  height: 700px;
-  margin: 0 auto;
-  display: flex;
-}
-.about .about-content-1,
-.about .about-content-2 {
-  width: 50%;
-  display: flex;
-  align-items: center;
-}
-.about .about-content-2 {
-  justify-content: center;
-}
-.about .about-content-2 .about-content-2__image{
-  width: 50%;
-  height: 50%;
-  border-radius: 50%;
 
-}
-.about .about-content-2 .about-content-2__image img{
-  width: 100%;
-  border-radius: 50%;
-  height:100%;object-fit: cover;
-}
-.about h3 {
-  font-size: 40px;
-}
-.about h2 {
-  font-size: 40px;
-  font-weight: 700;
-  margin-bottom: 50px;
-}
-.about p {
-  line-height: 1.7;
-  font-size: 20px;
-}
-.about .cv {
-  margin-top: 50px;
-}
-.about .cv a {
-  position: relative;
-  border-radius: 5px;
-  text-decoration: none;
-  color: var(--white);
-  background-color: var(--color-primary);
-  padding: 10px;
-}
-.about .cv a:hover {
-  color: var(--color-primary);
-  background-color: var(--color-secondary);
-  border: 1px solid var(--color-primary);
-}
-.about .cv a .download {
-  margin: 0 10px;
-}
-
-@media (max-width: 500px) {
-  .about h3 {
-    font-size: 20px;
-  }
-  .about h2 {
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
-  .about p {
-    line-height: 1.7;
-    font-size: 18px;
-  }
-} */
 /*animation*/
 .animation {
   position: absolute;
