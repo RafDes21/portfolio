@@ -1,5 +1,5 @@
-import { Card, NavBar, Projects, Studies, Tools } from "../components";
-import { STUDIES } from "../db";
+import { Card, NavBar, Projects, Studies, Tools } from "../../../components";
+import { STUDIES } from "../../../db";
 
 import "./styles.css";
 
